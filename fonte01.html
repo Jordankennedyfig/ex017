@@ -6,19 +6,38 @@
     <title>Fontes em CSS</title>
     <style>
         body {
+
             font-family: Arial, Helvetica, sans-serif;
             /* Medidas Absolutas
             cm, mm, in, px, pt, pc
 
             Medidas Relativas
-            em, ex, rem, vw, vh,
+            em, ex, rem, vw, vh, %
             16px geralmente = 1em
+            Recomendado usar "em" para melhor usabilidade em dispositivos menores */
             
-            Recomendado usar "em" para melhor usabilidade em dispositivos menores
-            */
-            font-size: 1em;
-
+            font-size: 1em;        
+            /* lighter - normal - bold - bolder */
+                   
         }
+            
+
+        h1{
+            /* shorthand font ordem = 
+            -> font-style -> font-weigth -> font-size -> font-family
+
+            *ex de código sem usar o Shorthand*
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic; */ 
+
+            /* ex de código simplificado com Shorthand */ 
+            font: italic bolder 3em 'Franklin Gothic Medium';       
+           
+        }
+
+        
         
     </style>
 </head>
